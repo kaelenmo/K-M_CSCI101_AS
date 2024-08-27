@@ -29,16 +29,21 @@ int digit5;
   cout <<  "Enter the 5th binary digit: ";
     cin >> digit5;
 
- 
+ //Calculation //
  int decValue = digit5 + (digit4 * 2) + (digit3 * 4) + (digit2 * 8) + (digit1 * 16);
 
 
 
-//Final output// 
-if (decValue > 31 or decValue < 0 or digit5 > 0 or digit4 > 0 or digit3 > 0 or digit2 > 0 or digit1 > 0) {
+// Valid data check //
+if (digit5 < 0 or digit4 < 0 or digit3 < 0 or digit2 < 0 or digit1 < 0 or digit5 > 1 or digit4 > 1 or digit3 > 1 or digit2 > 1 or digit1 > 1) {
    cout << "Error: Check your digits and try again.";
-   } else { cout << digit5 << digit4 << digit3 << digit2 <<digit1 << " converted to decimal is " << decValue;
+
+   // Final Output //
+   } else { cout << digit1 << digit2 << digit3 << digit4 << digit5 << " converted to decimal is " << decValue;
    };
 }
+
+
+
 
 
